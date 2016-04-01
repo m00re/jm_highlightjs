@@ -1,0 +1,11 @@
+plugin.tx_jmhighlightjs {
+
+	# cat=tx_jmhighlightjs/file; type=file[css]; label=Location of CSS Style to use for Syntax Highlighting
+	stylesheet = EXT:jm_highlightjs/Resources/Public/CSS/default.css
+
+	# cat=tx_jmhighlightjs/file; type=file[js]; label=Location of the highlight.js Source Code
+	library = EXT:jm_highlightjs/Resources/Public/Javascript/highlight.common.min.js
+
+	# cat=tx_jmhighlightjs/basic; type=boolean; label=Enable Server-Side Rendering of Code Highlighting (v8js PHP-module needs to be installed)
+	enablev8js = 0
+}

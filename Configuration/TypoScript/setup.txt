@@ -1,0 +1,16 @@
+# We do not need to add 'pre' to 'lib.parseFunc.allowTags' as it is already
+# allowed by default. But we have to make sure 'pre' is not wrapped in a
+# paragraph (by default it is)
+lib.parseFunc_RTE {
+	externalBlocks := addToList(pre)
+	externalBlocks.pre {
+		# Two parameters are sent to the PHP function: As first parameter a content variable,
+		# which contains the current content. This is the value to be processed. As second
+		# parameter any sub-properties of postUserFunc are provided to the function.
+		stdWrap.postUserFunc = JensMittag\JmHighlightjs\Hooks\HighlightingUserFunc->highlight
+		stdWrap.postUserFunc.enablev8js = {$plugin.tx_jmhighlightjs.enablev8js}
+		stdWrap.postUserFunc.stylesheet = {$plugin.tx_jmhighlightjs.stylesheet}
+		stdWrap.postUserFunc.library = {$plugin.tx_jmhighlightjs.library}
+	}
+}
+

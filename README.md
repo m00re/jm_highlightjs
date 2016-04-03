@@ -13,6 +13,14 @@ the PHP extension [v8js](http://php.net/manual/en/book.v8js.php).
 - Typo3 v7.x
 - PHP extension [v8js](http://php.net/manual/en/book.v8js.php) (optional)
 
+## Screenshots
+
+![Selecting the to be used code language in RTE](Documentation/Images/ScreenshotBackend.png)
+**Selecting the to be used code language in RTE**
+
+![Resulting frontend rendering](Documentation/Images/ScreenshotFrontend.png)
+**Resulting frontend rendering**
+
 ## Installation & Configuration
 
 1. Install the extension from TER.

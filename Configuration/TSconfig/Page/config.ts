@@ -170,7 +170,7 @@ RTE.default {
         	addItems := addToList(pre)
    		}
         blockstyle {
-            showTagFreeClasses = 1
+            showTagFreeClasses = 0
         }
     }
 }
